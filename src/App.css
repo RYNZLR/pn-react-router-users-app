@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.App{
+  background-color: #fafafa;
   min-height: 100vh;
+}
+
+h1{
+  font-size: 1.7rem;
+}
+
+h1 span, a{
+  color: rgb(0, 153, 255)
+}
+
+h2{
+  font-size: 1.5rem;
+}
+
+.nav-container{  
+  padding: 0.5em 2rem;
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
 
-.App-link {
-  color: #61dafb;
+.nav-container nav{
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav .active{
+  font-weight: bold;
+}
+
+nav ul{
+  padding: 0;
+  display: flex;
+  
+}
+
+nav li{
+  display: inline;
+  list-style: none;
+  line-height: 1.7rem;
+  margin-right: 4rem;
+
+}
+
+nav li:last-of-type{
+  margin-right: 0;
+}
+
+nav li:hover{
+  background-color: #eeeeee;
+}
+
+nav a{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 0.5rem 2rem
+}
+
+.historyNave{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+
+.historyNave p, .historyNave a {
+  text-decoration: none;
+  margin: 0;
+  padding: 1rem 2rem;
+}
+
+.code{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+main{
+  width: 900px;
+  margin: 0 auto;
 }
